@@ -16,11 +16,17 @@ The work involves loading data from a multi-table SQLite database, cleaning it, 
 ## 📁 Repository Structure
 
 ```
-maji-ndogo-agric-analysis/
-│
-├── Maji_Ndogo_farm_survey_small.db     # SQLite database (4 tables, 5,654 fields)
-├── Code_challenge_Integrated_Project_P1_student_version.ipynb   # Main analysis notebook
-└── README.md
+c:\dev\ALX-solutions\
+├── .gitignore
+├── Clean-coding-with-PEP-8.ipynb
+├── Code_challenge_Integrated_Project_P1_student_version.ipynb
+├── Introduction_to_NumPy_Exercise.ipynb
+├── Maji_Ndogo_farm_survey_small.db
+├── README.md
+├── commands.txt
+├── main.py
+├── pyproject.toml
+└── uv.lock
 ```
 
 ---
@@ -191,4 +197,4 @@ These 14 fields represent the gold standard — the specific locations in Maji N
 **Chacha Marwa**
 ALX Data Analytics Programme — Integrated Project Part 1
 - GitHub: [ChachaMarwaDev](https://github.com/ChachaMarwaDev)
-- Portfolio: [chachamarwadev.com](https://chachamarwadev.com)
+- Portfolio: [chachamarwadev.com](https://sites.google.com/view/chachamarwadev?usp=sharing)
