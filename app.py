@@ -176,7 +176,7 @@ with st.sidebar:
     st.divider()
     page = st.radio(
         "Navigation",
-        ["📊 Overview", "🌾 Crop Explorer", "🪨 Soil Fertility",
+        ["📊 Overview", "🌾 Crop Explorer", "🟤 Soil Fertility",
          "🌦️ Climate & Geography", "🏆 Top Performers", "🗺️ Field Map"],
         label_visibility="collapsed"
     )
