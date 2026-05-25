@@ -16,17 +16,18 @@ The work involves loading data from a multi-table SQLite database, cleaning it, 
 ## 📁 Repository Structure
 
 ```
-c:\dev\ALX-solutions\
+ALX-solutions/
+│
+├── app.py                                                        # Streamlit interactive dashboard
+├── Code_challenge_Integrated_Project_P1_student_version.ipynb   # Main analysis notebook
+├── Clean-coding-with-PEP-8.ipynb                                # PEP 8 coding standards exercise
+├── Introduction_to_NumPy_Exercise.ipynb                         # NumPy fundamentals exercise
+├── Maji_Ndogo_farm_survey_small.db                              # SQLite database (4 tables, 5,654 fields)
+├── pyproject.toml                                                # Project dependencies (uv)
+├── uv.lock                                                       # Locked dependency versions
+├── commands.txt                                                  # Useful dev commands reference
 ├── .gitignore
-├── Clean-coding-with-PEP-8.ipynb
-├── Code_challenge_Integrated_Project_P1_student_version.ipynb
-├── Introduction_to_NumPy_Exercise.ipynb
-├── Maji_Ndogo_farm_survey_small.db
-├── README.md
-├── commands.txt
-├── main.py
-├── pyproject.toml
-└── uv.lock
+└── README.md
 ```
 
 ---
@@ -173,13 +174,17 @@ These 14 fields represent the gold standard — the specific locations in Maji N
 | `NumPy` | Numerical operations |
 | `SQLAlchemy` | SQLite database connection |
 | `SQLite` | Database storage (4-table schema) |
-| `Matplotlib` (via `df.plot`) | Quick exploratory visualisations |
+| `Streamlit` | Interactive dashboard (`app.py`) |
+| `Plotly` | Charts and map visualisations in the dashboard |
+| `uv` | Dependency management (`pyproject.toml` + `uv.lock`) |
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone the repository and ensure `Maji_Ndogo_farm_survey_small.db` is in the same directory as the notebook.
+### Notebook
+
+1. Clone the repository and ensure `Maji_Ndogo_farm_survey_small.db` is in the root folder.
 2. Install dependencies:
    ```bash
    pip install pandas numpy sqlalchemy
@@ -189,6 +194,22 @@ These 14 fields represent the gold standard — the specific locations in Maji N
    jupyter notebook Code_challenge_Integrated_Project_P1_student_version.ipynb
    ```
 4. Run all cells from top to bottom. The data loading, cleaning, and all five challenge functions are self-contained.
+
+### Streamlit Dashboard
+
+1. Install dependencies (using uv):
+   ```bash
+   uv sync
+   ```
+   Or with pip:
+   ```bash
+   pip install streamlit plotly sqlalchemy pandas numpy
+   ```
+2. Launch the app:
+   ```bash
+   streamlit run app.py
+   ```
+3. Opens at `http://localhost:8501`. The `.db` file is auto-detected in the root folder, or can be uploaded via the sidebar.
 
 ---
 
