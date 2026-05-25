@@ -1,0 +1,2 @@
+python -m venv .venv - create a virtual environment in the current directory
+.venv\Scripts\Activate.ps1 - activate the virtual environment in powershell
