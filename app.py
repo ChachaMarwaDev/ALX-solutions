@@ -486,7 +486,7 @@ elif page == "🌦️ Climate & Geography":
 
     st.subheader("Summary Table")
     st.dataframe(
-        result.set_index(group_by_col).style.background_gradient(cmap="Greens", axis=0),
+        result.set_index(group_by_col),
         use_container_width=True
     )
 
@@ -606,8 +606,7 @@ elif page == "🏆 Top Performers":
         st.dataframe(
             ideal[["Location", "Soil_type", "Elevation", "Rainfall",
                    "Ave_temps", "Pollution_level", "Standard_yield", "Plot_size"]]
-            .reset_index(drop=True)
-            .style.background_gradient(subset=["Standard_yield"], cmap="Greens"),
+            .reset_index(drop=True),
             use_container_width=True,
         )
     else:
